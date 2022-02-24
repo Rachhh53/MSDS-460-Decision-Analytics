@@ -1,0 +1,79 @@
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   1
+
+Problem:    
+Objective:  OBJ = 259.5 (MINimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 _C1          NS      10.00000        .           10.00000        2.00000          -Inf     195.50000 T2U5
+                                           8.00000      10.00000       10.00000          +Inf     259.50000 T1U5
+
+     2 _C2          NS       6.00000        .            6.00000      -12.00000          -Inf     169.50000 U1U2
+                                           5.00000       6.00000           +Inf          +Inf          +Inf
+
+     3 _C3          NS      17.00000        .           17.00000        5.00000          -Inf     157.50000 U2U3
+                                           8.50000      17.00000           +Inf          +Inf          +Inf
+
+     4 _C4          NS       7.00000        .            7.00000         .               -Inf     196.50000 T2U4
+                                           9.00000       7.00000       12.00000          +Inf     304.50000 T2U3
+
+     5 _C5          NS       8.00000        .            8.00000         .               -Inf     187.50000 T2U5
+                                           9.00000       8.00000       13.00000          +Inf     304.50000 T2U3
+
+     6 _C6          NU      10.00000        .               -Inf       10.00000          -Inf     259.50000 T1U5
+                                          -5.00000      10.00000       18.00000       5.00000     219.50000 T2U5
+
+     7 _C7          NU      20.00000        .               -Inf       15.00000          -Inf     279.50000 T2U3
+                                          -4.00000      20.00000       32.00000       4.00000     211.50000 U2U3
+
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   2
+
+Problem:    
+Objective:  OBJ = 259.5 (MINimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 T1U1         BS      10.00000       3.00000        .            10.00000          -Inf          -Inf
+                                            .               +Inf       10.00000          +Inf          +Inf
+
+     2 T1U5         BS        .            4.00000        .              .               -Inf     259.50000
+                                            .               +Inf       -5.00000       9.00000     259.50000 _C6
+
+     3 T2U3         BS       5.00000       4.50000        .            13.00000       2.00000     247.00000 U3U5
+                                            .               +Inf           -Inf       7.50000     274.50000 U4U3
+
+     4 T2U4         BS       7.00000       5.00000        .            12.00000       2.00000     238.50000 U4U3
+                                            .               +Inf           -Inf       8.00000     280.50000 U3U4
+
+     5 T2U5         BS       8.00000       5.00000        .             8.00000        .          219.50000 _C6
+                                            .               +Inf           -Inf       7.50000     279.50000 U3U5
+
+     6 U1U2         BS      18.00000       5.00000        .            23.00000       1.00000     187.50000 _C7
+                                            .               +Inf       18.00000          +Inf          +Inf
+
+     7 U2U3         BS      12.00000       3.50000        .            17.00000       -.50000     211.50000 _C7
+                                            .               +Inf       12.00000          +Inf          +Inf
+
+     8 U3U2         NL        .            4.00000        .           -12.00000      -3.50000     169.50000 U2U3
+                                           7.50000          +Inf           +Inf          +Inf          +Inf
+
+     9 U3U4         NL        .            3.50000        .            -5.00000        .50000     244.50000 T2U3
+                                           3.00000          +Inf        7.00000          +Inf     280.50000 T2U4
+
+    10 U3U5         NL        .            3.00000        .            -5.00000        .50000     247.00000 T2U3
+                                           2.50000          +Inf        8.00000          +Inf     279.50000 T2U5
+
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   3
+
+Problem:    
+Objective:  OBJ = 259.5 (MINimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    11 U4U3         NL        .            2.50000        .            -7.00000       -.50000     238.50000 T2U4
+                                           3.00000          +Inf        5.00000          +Inf     274.50000 T2U3
+
+End of report
